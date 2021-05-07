@@ -1,0 +1,33 @@
+1 Write java program to find with length of the string without using length keyword
+
+public class StringLength {
+   public static void main(String args[]) throws Exception {
+      String str = "sampleString";
+      int i = 0;
+      for(char c: str.toCharArray()) {
+         i++;
+      }
+      System.out.println("Length of the given string ="+i);
+   }
+}
+
+*****************************************************************************************************************************
+2)Write Java program to find occurrence of the String
+
+
+String s= "I love india";
+String[]ch= s.split(" ");
+Hashset<>set=new Hashset<String>();
+for(int i=0;i<=s.length()-1;i++)
+{
+set.add(ch[i]);
+for(String s:set)
+{
+if(s.equals(ch[i]))
+{
+count++;
+}
+}
+syste.out.print(S+" "+count);
+}
+}

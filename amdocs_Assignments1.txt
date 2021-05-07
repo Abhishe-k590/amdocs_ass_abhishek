@@ -1,0 +1,17 @@
+********************************************************************************************************************************************************
+S.No	List	                                                                                    SET
+1.	The list implementation allows us to add the same or duplicate elements.	   The set implementation doesn't allow us to add the same or duplicate elements.
+2.	The insertion order is maintained by the List.	                                    It doesn't maintain the insertion order of elements.
+3.	List allows us to add any number of null values.	                             Set allows us to add at least one null value in it.
+4.	The List implementation classes are LinkedList and ArrayList.	                     The Set implementation classes are TreeSet, HashSet and LinkedHashSet.
+5.	We can get the element of a specified index from the list using the get() method.	We cannot find the element from the Set based on the index because it               doesn't provide any get method().
+6.	It is used when we want to frequently access the elements by using the index.	         It is used when we want to design a collection of distinct elements.
+7.	The method of List interface listiterator() is used to iterate the List elements.	The iterator is used when we need to iterate the Set elements.
+
+********************************************************************************************************************************************************************
+S.No.	Set	                                                                                                       Map
+1.	Set is used to construct the mathematical Set in Java.	                                      Map is used to do mapping in the database.
+2.	It cannot contain repeated values.	                                                       It can have the same value for different keys.
+3.We can easily iterate the Set elements using the keyset() and the entryset() method of it.	 Map elements cannot be iterated. We need to convert Map into Set for iterating the elements.
+
+4. Insertion order is not maintained by the Set interface. However,                             The insertion order is also                                                                                                                                                   not maintained by the Map. However, some of the Map                                                                                                                        classes like TreeMap and LinkedHashMap does thesame.                   some of its classes, like LinkedHashSet, maintains the insertion order.	
