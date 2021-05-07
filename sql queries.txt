@@ -1,0 +1,72 @@
+
+
+1) waqtd the employ details with the deptname who join the company in the year 1981.
+
+select emp.*,dname
+from emp,dept
+where emp.dno=dept.dno and hiredate like '%81';
+
+2) waqtd the employee name,employ id, dept name for the employees working in a accounting and research dept.
+
+select ename,eid,dname
+from emp,dept
+where emp.dno=dept.dno  and  job in('accounting','research');
+
+
+3) waqtd the employee name,date of joining and location for the employees martyn and blake.
+
+select ename,hiredate,loc
+from emp,dept
+where emp.dno=dept.dno and ename in('martyn','blake');
+
+
+4) waqtd the employee name,commission and deptnames for the employees whose employ name and dept name contains exactly 5characters.
+
+select ename,comm,dname
+from emp,dept
+where emp.dno=dept.dno and ename like '-----' and dname like '-----';
+
+
+5) waqtd the designation,reporting mgr and loc for the employees working as manager in chicago
+
+select job,mgr,loc
+from emp,dept
+where emp.dno=dept.dno and job='manager' and loc='chicago';
+
+
+6) waqtd the employee names,job,salary,dept name and location for all the employees.
+
+select ename,job,sal,dname,loc
+from emp,dept
+where emp.deptno=dept.dept no;
+
+7) waqtd the country names and region names for the cities tokyo and bombay
+
+select country name,region name
+from regions r,countries c,locations l
+where r.region_id=c.region_id
+        and
+c.country_id=l.country_id
+        and
+   city in('tokyo','bombay');
+
+
+8) waqtd emp names,sal and grade for the employees working as clerk
+
+select ename,sal,grade
+from emp,salgrade
+where sal between lowsal and highsal
+        and  
+job='clerk';
+
+
+
+
+
+
+
+
+
+
+
+
